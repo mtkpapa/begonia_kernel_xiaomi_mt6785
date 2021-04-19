@@ -1,9 +1,6 @@
 # ---------------------------------------------------
 # ALPS Setting
 # ---------------------------------------------------
-ifneq ($(KERNEL_OUT),)
-    ccflags-y += -imacros $(KERNEL_OUT)/include/generated/autoconf.h
-endif
 
 ifeq ($(KBUILD_MODPOST_FAIL_ON_WARNINGS),)
     # Force build fail on modpost warning
