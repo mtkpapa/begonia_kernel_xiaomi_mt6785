@@ -773,7 +773,7 @@ static int __init main_driver_init(void)
 	return 0;
 }
 
-static void __exit main_driver_exit(void)
+static void main_driver_exit(void)
 {
 	BTMTK_INFO("%s", __func__);
 	btmtk_cif_deregister();
