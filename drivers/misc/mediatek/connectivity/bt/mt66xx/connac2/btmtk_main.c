@@ -779,8 +779,11 @@ static void main_driver_exit(void)
 	btmtk_cif_deregister();
 	main_exit();
 }
+
+#ifndef MTK_WCN_REMOVE_KERNEL_MODULE
 module_init(main_driver_init);
 module_exit(main_driver_exit);
+#endif
 
 /**
  * Module Common Information
