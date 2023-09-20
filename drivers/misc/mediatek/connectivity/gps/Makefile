@@ -58,7 +58,11 @@ ccflags-y += -I$(srctree)/drivers/devfreq
 ###############################################################################
 
 MODULE_NAME := gps_drv
-obj-m += $(MODULE_NAME).o
+ifeq ($(CONFIG_WLAN_DRV_BUILD_IN),y)
+  obj-y += $(MODULE_NAME).o
+else
+  obj-m += $(MODULE_NAME).o
+endif
 
 WMT_SRC_FOLDER := $(srctree)/drivers/misc/mediatek/common
 

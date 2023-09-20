@@ -39,7 +39,11 @@ endif
 ###############################################################################
 
 MODULE_NAME := bt_drv
-obj-m += $(MODULE_NAME).o
+ifeq ($(CONFIG_WLAN_DRV_BUILD_IN),y)
+  obj-y += $(MODULE_NAME).o
+else
+  obj-m += $(MODULE_NAME).o
+endif
 
 ccflags-y += -D CREATE_NODE_DYNAMIC=1
 
