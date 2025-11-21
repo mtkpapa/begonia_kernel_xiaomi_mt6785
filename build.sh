@@ -11,14 +11,8 @@ MAKE_ARGS=(
     O=out
     "CC=ccache clang"
     "CXX=ccache clang++"
-    AR=llvm-ar
-    NM=llvm-nm
-    OBJDUMP=llvm-objdump
-    STRIP=llvm-strip
     CROSS_COMPILE=aarch64-linux-gnu-
     CROSS_COMPILE_ARM32=arm-linux-gnueabi-
-    LLVM=1
-    LLVM_IAS=1
 )
 
 local_version_str="-perf"
