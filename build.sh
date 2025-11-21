@@ -6,6 +6,8 @@ export CCACHE_DIR="$HOME/.cache/ccache_mikernel"
 echo "CCACHE_DIR: [$CCACHE_DIR]"
 
 MAKE_ARGS=(
+    ARCH=arm64
+    SUBARCH=arm64
     O=out
     "CC=ccache clang"
     "CXX=ccache clang++"
