@@ -15,7 +15,6 @@ MAKE_ARGS=(
     NM=llvm-nm
     OBJDUMP=llvm-objdump
     STRIP=llvm-strip
-    LD=ld.lld
     CROSS_COMPILE=aarch64-linux-gnu-
     CROSS_COMPILE_ARM32=arm-linux-gnueabi-
     LLVM=1
