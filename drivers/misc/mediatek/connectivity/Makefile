@@ -84,6 +84,13 @@ endif
         obj-y += wmt_drv/
         obj-y += wmt_chrdev_wifi/
         obj-y += wlan_drv_gen4m/
+        obj-$(CONFIG_MTK_COMBO) += common/
+        obj-$(CONFIG_MTK_COMBO_WIFI) += wlan/adaptor/
+        obj-$(CONFIG_MTK_COMBO_CHIP_CONSYS_6785) += wlan/core/gen4m/
+        obj-$(CONFIG_MTK_COMBO_BT) += bt/mt66xx/wmt/
+        obj-$(CONFIG_MTK_COMBO_GPS) += gps/
+        obj-$(CONFIG_MTK_FMRADIO) += fmradio/
+        obj-$(CONFIG_MTK_CONNFEM) += connfem/
     endif
 
 # Otherwise we were called directly from the command line;
