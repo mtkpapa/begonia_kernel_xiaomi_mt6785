@@ -30,7 +30,7 @@ rm -rf out/
 rm -rf AnyKernel3/
 
 #setting up AK
-git clone https://github.com/mtkpapa/AnyKernel3 -b master
+git clone https://github.com/mtkpapa/AnyKernel3 -b begonia
 
 if [ $KSU_E -eq 1 ]; then
     echo "Downloading KernelSU-Next"
